@@ -1,4 +1,8 @@
 public with sharing class FreightTriggerHandler {
+
+    //Armazena os valores que serão manipulados
+    //Stores the values ​​that will be manipulated
+
     List<Freight__c> oldRecords {get; set;}
     List<Freight__c> newRecords {get; set;}
     Map<Id, Freight__c> oldMap {get; set;}
@@ -10,6 +14,9 @@ public with sharing class FreightTriggerHandler {
         this.oldMap = oldMap;
         this.newMap = newMap;   
     }
+
+    //Este método aciona outras funções quando a trigger na condição é acionada
+    //This method triggers other functions when the trigger in the condition is triggered
 
     public void beforeInsert() {
         FreightHelper.calculateScore(this.newRecords);

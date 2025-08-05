@@ -89,17 +89,6 @@ As classes `OrderItemHelper` e `OrderItemTriggerHandler` gerenciam:
 
 ---
 
-## 🧪 Testes
-
-Para garantir a qualidade da lógica, recomenda-se a criação de classes de teste com foco em:
-
-- Validação de fretes inválidos.
-- Cálculo de frete com diferentes combinações de localização.
-- Comportamento ao inserir/alterar itens de pedido.
-- Validação de status do pedido.
-
----
-
 ## ✍️ Autor
 
 Desenvolvido por [Matheus Freitas](https://github.com/mtfreitas-dev)

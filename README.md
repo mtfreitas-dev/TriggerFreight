@@ -17,6 +17,9 @@ Este repositório contém uma implementação de lógica de cálculo de frete au
 
 ## 🧠 Lógica de Negócio
 
+<img width="746" height="509" alt="image" src="https://github.com/user-attachments/assets/80337166-e2c6-4944-a4ff-e0dfe9003f17" />
+
+
 ### 🔹 Frete (Freight__c)
 
 A classe `FreightHelper` calcula a pontuação do frete:

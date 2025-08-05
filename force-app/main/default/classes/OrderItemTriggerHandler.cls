@@ -1,4 +1,8 @@
 public with sharing class OrderItemTriggerHandler {
+
+    //Armazena os valores que serão manipulados
+    //Stores the values ​​that will be manipulated
+
     List<OrderItem> oldRecords {get; set;} // Trigger.old
     List<OrderItem> newRecords {get; set;} //Trigger.new
     Map<Id, OrderItem> oldMap {get; set;} //Trigger.oldMap
@@ -11,6 +15,8 @@ public with sharing class OrderItemTriggerHandler {
         this.newMap = newMap;
     }
 
+    //Este método aciona outras funções quando a trigger na condição é acionada
+    //This method triggers other functions when the trigger in the condition is triggered
 
     public void beforeInsert() {
         OrderItemHelper.checkOrderItem(this.newRecords);

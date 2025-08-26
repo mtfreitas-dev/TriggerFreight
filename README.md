@@ -70,6 +70,12 @@ As classes `OrderItemHelper` e `OrderItemTriggerHandler` gerenciam:
 
 ## 📌 Requisitos
 
+✅ **Salesforce org com API habilitada**  
+✅ **Permissões de administrador para deploy**  
+✅ **Visual Studio Code instalado**  
+✅ **Salesforce CLI configurado e autenticado**  
+✅ **Git instalado localmente**  
+
 - Salesforce DX (SFDX)
 - Objeto personalizado `Freight__c` com os seguintes campos:
   - `CEP__c` (Text)
@@ -90,6 +96,25 @@ As classes `OrderItemHelper` e `OrderItemTriggerHandler` gerenciam:
   - `TotalFreight__c` (Number)
   - `DistributionCenter__c` (Id ou Lookup)
 
+
+# 🚀 Instalação em Outra Organização Salesforce
+
+### **Método 1: Deploy via Salesforce CLI (Recomendado)**
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/mtfreitas-dev/TriggerFreight.git
+cd TriggerFreight
+````
+Autentique na org de destino:
+```bash
+sf org login web -a [ALIAS_DA_ORG]
+```
+Execute o deploy:
+```bash
+sf project deploy start -o [ALIAS_DA_ORG]
+```
 ---
 
 ## ✍️ Autor
